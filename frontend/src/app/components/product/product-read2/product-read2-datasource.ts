@@ -1,17 +1,12 @@
+import { Product } from './../product.model';
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 
-// TODO: Replace this with your own data model type
-export interface ProductRead2Item {
-  name: string;
-  id: number;
-}
 
-// TODO: replace this with real data from your application
-const EXAMPLE_DATA: ProductRead2Item[] = [
+const EXAMPLE_DATA: Product[] = [
   {id: 1, name: 'Hydrogen'},
   {id: 2, name: 'Helium'},
   {id: 3, name: 'Lithium'},
